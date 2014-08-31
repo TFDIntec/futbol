@@ -187,3 +187,7 @@
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
+	
+	<!-- partida js -->
+	<script src="<?php echo $this->config->item('jquery');?>partidos.js"></script>
+

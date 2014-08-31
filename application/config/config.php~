@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/';
 $config['jquery'] = 'http://localhost/futbol/jquery/';
 $config['css'] = 'http://localhost/futbol/css/';
 $config['js'] = 'http://localhost/futbol/js/';
