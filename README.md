@@ -1,14 +1,15 @@
-fotbol
+http://futbol-intec.kd.io/futbol/ futbol
 ======
 
-Track your fotbol game with our web application is simple as drink water
+Track your futbol game with our web application is simple as drink water.
+Just go to: http://futbol-intec.kd.io/futbol/ and enjoy!
 
 Gmail/Koding
 user: futbolintec2014@gmail.com
 passw: 9@55w0rd
 
 Github 
-user: futboll-intec
+user: futbol-intec
 pass: Password1
 
 Nombre: Harold Lockward
