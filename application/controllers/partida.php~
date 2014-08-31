@@ -32,7 +32,7 @@ class Partida extends CI_Controller {
 			'title' => $this->lang->line("futbol"),
 		);
 		$this->load->view('header',$data);
-		$this->load->view('crear_partida',$data);
+		$this->load->view('home',$data);
 		$this->load->view('footer');	
 	}
 }
