@@ -14,11 +14,11 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
-$config['jquery'] = 'http://localhost/futbol/jquery/';
-$config['css'] = 'http://localhost/futbol/css/';
-$config['js'] = 'http://localhost/futbol/js/';
-$config['img'] = 'http://localhost/futbol/images/';
+$config['base_url']	= 'http://futbol-intec.kd.io/futbol/';
+$config['jquery'] = 'jquery/';
+$config['css'] = 'css/';
+$config['js'] = 'js/';
+$config['img'] = 'images/';
 
 /*
 |--------------------------------------------------------------------------
