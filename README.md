@@ -8,7 +8,7 @@ user: futbolintec2014@gmail.com
 passw: 9@55w0rd
 
 Github 
-user: futboll-intec
+user: futbol-intec
 pass: Password1
 
 Nombre: Harold Lockward
