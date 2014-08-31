@@ -1,4 +1,4 @@
-fotbol
+futbol
 ======
 
 Track your futbol game with our web application is simple as drink water
