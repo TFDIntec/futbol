@@ -79,33 +79,30 @@
                                 <div class="col-lg-6">
 										  <label>Jugadas</label>
 												<div class="form-group">
-                                         <label>Selects</label>
+                                         <label>Ofensiva</label>
                                          <select class="form-control">
-                                             <option>1</option>
-                                             <option>2</option>
-                                             <option>3</option>
-                                             <option>4</option>
-                                             <option>5</option>
+															<option value="">---</option>
+															<?php foreach($jugada_ofensiva as $ofensiva){?>
+                                             	<option value="<?php echo $ofensiva->ID;?>"><?php echo $ofensiva->jugada;?></option>
+															<?php } ?>
                                          </select>
                                      </div>
 												 <div class="form-group">
-                                         <label>Selects</label>
+                                         <label>Defensiva</label>
                                          <select class="form-control">
-                                             <option>1</option>
-                                             <option>2</option>
-                                             <option>3</option>
-                                             <option>4</option>
-                                             <option>5</option>
+                                             <option value="">---</option>
+															<?php foreach($jugada_defensiva as $defensiva){?>
+                                             	<option value="<?php echo $defensiva->ID;?>"><?php echo $defensiva->jugada;?></option>
+															<?php } ?>
                                          </select>
                                      </div>
 												 <div class="form-group">
-                                         <label>Selects</label>
+                                         <label>Penalidad</label>
                                          <select class="form-control">
-                                             <option>1</option>
-                                             <option>2</option>
-                                             <option>3</option>
-                                             <option>4</option>
-                                             <option>5</option>
+                                             <option value="">---</option>
+															<?php foreach($jugada_penalidad as $penalidad){?>
+                                             	<option value="<?php echo $penalidad->ID;?>"><?php echo $penalidad->jugada;?></option>
+															<?php } ?>
                                          </select>
                                      </div>	
                                 </div>

@@ -1,0 +1,26 @@
+<?php
+class Jugadas_model extends CI_Model {
+
+    function __construct()
+    {
+        // Call the Model constructor
+        parent::__construct();
+    }
+    
+    function get_all_jugadas()
+    {
+		$this->db->select('*',false);
+		$query = $this->db->get('jugadas');
+        return $query->result();
+    }
+
+	function jugada_tipos($tipo)
+	{
+		$this->db->select('*',false);
+		$this->db->where('ID_tipo_jugada',$tipo);
+		$query = $this->db->get('jugadas');
+		return $query->result();
+	}
+
+}
+?>
