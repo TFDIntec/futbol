@@ -33,7 +33,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 	
-	<!-- /#wrapper -->
+	 <script type="text/javascript">
+			_base_url = "<?php echo base_url(); ?>";
+	 </script>
+	 <!-- /#wrapper -->
 
     <!-- jQuery Version 1.11.0 -->
     <script src="<?php echo $this->config->item('js');?>jquery-1.11.0.js"></script>
@@ -49,7 +52,7 @@
     <script src="<?php echo $this->config->item('js');?>plugins/dataTables/dataTables.bootstrap.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="<?php echo $this->config->item('js');?>sb-admin-2.js"></script>
+    <script src="<?php echo $this->config->item('js');?>sb-admin-2.js"></script>	
 	
 </head>
 
@@ -93,19 +96,7 @@
                         </li>
                         
                         <li>
-                            <a href="<?php echo base_url(); ?>partida/crear_partida"><i class="fa fa-wrench fa-fw"></i> <?php echo $this->lang->line("new_game_set") ?></a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-users"></i> <?php echo $this->lang->line("users") ?></a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-users"></i> <?php echo $this->lang->line("movement_of_people") ?></a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-bar-chart-o fa-fw"></i> <?php echo $this->lang->line("queries") ?></a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-question-circle"></i> <?php echo $this->lang->line("help") ?></a>
+                            <a href="<?php echo base_url(); ?>partida/crear_partida"><i class="fa fa-users"></i> <?php echo $this->lang->line("new_game_set") ?></a>
                         </li>
                     </ul>
                 </div>

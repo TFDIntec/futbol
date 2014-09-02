@@ -30,7 +30,7 @@
 									<td><?php echo $partido->ID; ?></td>
 									<td><?php echo "Equipo 1 vs Equipo 2" ?></td>
 									<td class="center"><?php echo $partido->equipo_1_puntos."-".$partido->equipo_2_puntos ; ?></td>
-									<td class="center"><a href="<?php echo base_url(); ?>partida/ver_partido/<?php echo $partido->ID; ?>" class="btn btn-primary">Ver</a></td>
+									<td class="center"><a href="<?php echo base_url(); ?>partida/ver_partido/$partido->ID" class="btn btn-primary">Ver</a></td>
 								</tr>
 								<?php } ?>
 							</tbody>

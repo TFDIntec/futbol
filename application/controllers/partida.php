@@ -27,7 +27,7 @@ class Partida extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	public 	function crear_partida()
+	public function crear_partida()
 	{
 		$data = array(
 			'title' => $this->lang->line("futbol"),
@@ -50,4 +50,39 @@ class Partida extends CI_Controller {
 		$this->load->view('crear_partida',$data);
 		$this->load->view('footer');	
 	}
+	
+	public function grabar_partida()
+	{
+		if(isset($_POST['jugadas']) && $_POST['jugadas'] != ""){
+			$partido = $this->Partidos_model->save_partido(1,2,$_POST['puntos1'],$_POST['puntos2']);	
+
+			$jugadas = $_POST['jugadas'];
+			foreach($jugadas as $jugada)
+			{
+				$this->Partidos_model->save_partido_detalle($partido,$jugada[1],$jugada[0]);		
+			}
+			redirect(base_url());
+		}
+		return false;
+			
+	}
+
+	public function ver_partido($id)
+	{
+		
+		$data = array(
+			'title' => $this->lang->line("futbol"),
+			
+			'partidos' => array()
+		);	
+		
+		$partido_detalle = $this->Partidos_model->get_partida_detalle($id);
+		if(count($partido_detalle) > 0) $data['partidos'] = $partido_detalle;
+		
+		//print_r($partido_detalle);
+		$this->load->view('header',$data);
+		$this->load->view('ver_partida',$data);
+		$this->load->view('footer');
+	}	
+
 }

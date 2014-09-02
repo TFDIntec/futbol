@@ -1,0 +1,59 @@
+<div id="page-wrapper">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">Equipo 1 VS Equipo 2</h1>
+		</div>
+		<!-- /.col-lg-12 -->
+	</div>
+	<!-- /.row -->
+	<div class="row">
+		<div class="col-lg-12">
+			<!-- /.col-lg-12 -->
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <?php echo "Resultado: ".$partidos[0]->equipo_1_puntos." - ".$partidos[0]->equipo_2_puntos; ?>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Posicion</th>
+                                            <th>Jugada</th>
+                                            <th>Equipo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+													<?php foreach($partidos as $partido) { ?>	
+		                                     <tr class="<?php echo ($partido->ID_equipo == 1) ? 'success' : 'warning' ?>">
+															  <td><?php echo $partido->nombre; ?></td>	
+		                                         <td><?php echo $partido->posicion; ?></td>
+		                                         <td><?php echo $partido->jugada; ?></td>
+		                                         <td><?php echo "Equipo ".$partido->ID_equipo; ?></td>
+		                                     </tr>
+													<?php } ?>		
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->	
+		
+		<!-- /.col-lg-12 -->
+	</div>
+</div>
+<!-- /#page-wrapper -->
+   <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+    </script>
+

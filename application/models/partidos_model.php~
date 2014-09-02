@@ -43,6 +43,20 @@ class Partidos_model extends CI_Model {
 		$this->db->insert('partida_detalle', $data);
  		return $this->db->insert_id();
 	}
+	
+	select p.ID,p.equipo_1_puntos, p.equipo_2_puntos,jus.nombre,tj.descripcion as posicion,juga.jugada, jus.ID_equipo from partidos p
+left join partida_detalle pd
+on pd.ID_partido = p.ID
+
+left join jugadores jus
+on jus.ID = pd.ID_jugador
+
+left join tipo_jugador tj
+on tj.ID = jus.ID_tipo_jugador 
+
+left join jugadas juga
+on juga.ID = pd.ID_jugada
+where p.ID = 6
 
 	function get_partida_detalle($id)
 	{
