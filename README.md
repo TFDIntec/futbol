@@ -6,11 +6,11 @@ Just go to: http://futbol-intec.kd.io/futbol/ and enjoy!
 
 Gmail/Koding
 user: futbolintec2014@gmail.com
-passw: 9@55w0rd
+passw: 
 
 Github 
 user: futbol-intec
-pass: Password1
+pass: 
 
 Nombre: Harold Lockward
 ID: 1053870
